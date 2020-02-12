@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    app_bar和菜单item的颜色-->
+    <color name="colorPrimary">#2B2B2B</color>
+<!--    系统工具栏颜色-->
+    <color name="colorPrimaryDark">#FCFDFF</color>
+
+    <color name="colorAccent">#03A9F4</color>
+
+    <color name="theme">#20CCD6EF</color>
+</resources>

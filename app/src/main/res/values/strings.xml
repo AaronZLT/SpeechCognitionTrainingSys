@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Doctor</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">AaronChung</string>
+    <string name="nav_header_subtitle">aaron_zlt@outlook.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">主页</string>
+    <string name="menu_gallery">个人信息</string>
+    <string name="menu_slideshow">我的患者</string>
+    <string name="menu_tools">我的消息</string>
+    <string name="menu_share">设置</string>
+    <string name="menu_send">退出</string>
+
+    <string name="home_button1">言语认知评估</string>
+    <string name="home_button2">言语认知训练</string>
+
+    <string name="crash">网络出错啦</string>
+    <string name="crash_image">网络出错图片</string>
+
+    <string-array name="patient_information">
+        <item>姓名</item>
+        <item>性别</item>
+        <item>年龄</item>
+        <item>科室</item>
+        <item>病床号</item>
+    </string-array>
+
+    <string name="memory_test_label1">面孔</string>
+    <string name="memory_test_label2">天鹅绒</string>
+    <string name="memory_test_label3">教堂</string>
+    <string name="memory_test_label4">菊花</string>
+    <string name="memory_test_label5">红色</string>
+    <string name="memory_test_label6">第一次</string>
+    <string name="memory_test_label7">第二次</string>
+    <string name="memory_test_label8">分类提示</string>
+    <string name="memory_test_label9">多选提示</string>
+    <string name="memory_test_label10">得分项</string>
+
+    <string name="assessment_finish_label1">正在将数据上传到服务器，请稍后.....</string>
+    <string name="assessment_finish_label2">重试</string>
+    <string name="assessment_finish_label3">返回主页</string>
+
+    <string name="assessment_memory">记忆</string>
+    <string name="assessment_delay_memory">延迟回忆</string>
+    <string name="finish_assessment">评估完成</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

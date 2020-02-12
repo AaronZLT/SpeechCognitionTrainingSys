@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.yyrz.SpeechCognition.ui.mainUI.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_patientList"
+            app:destination="@+id/patientList"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_nav_home_to_patientList2"
+            app:destination="@id/patientList" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_information"
+        android:name="com.yyrz.SpeechCognition.ui.mainUI.information.InformationFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_information" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_patient"
+        android:name="com.yyrz.SpeechCognition.ui.mainUI.patient.PatientFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_patient" />
+
+    <fragment
+        android:id="@+id/nav_message"
+        android:name="com.yyrz.SpeechCognition.ui.mainUI.message.MessageFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_message" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.yyrz.SpeechCognition.ui.mainUI.setting.SettingFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.yyrz.SpeechCognition.ui.mainUI.logout.LogoutFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_logout" />
+
+    <fragment
+        android:id="@+id/memory_assessment"
+        android:name="com.yyrz.SpeechCognition.ui.assessmentUI.memory.MemoryAssessment"
+        android:label="@string/assessment_memory"
+        tools:layout="@layout/fragment_memory_assessment" >
+        <action
+            android:id="@+id/action_memory_assessment_to_memoryDelayAssessment"
+            app:destination="@id/memoryDelayAssessment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/patientList"
+        android:name="com.yyrz.SpeechCognition.ui.commonUi.patientlist.PatientList"
+        android:label="@string/home_button1"
+        tools:layout="@layout/fragment_patient_list" >
+        <action
+            android:id="@+id/action_patientList_to_memory_assessment"
+            app:destination="@id/memory_assessment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+        <action
+            android:id="@+id/action_patientList_to_training_home_page"
+            app:destination="@id/training_home_page" />
+    </fragment>
+    <fragment
+        android:id="@+id/memoryDelayAssessment"
+        android:name="com.yyrz.SpeechCognition.ui.assessmentUI.memory.MemoryDelayAssessment"
+        android:label="@string/assessment_delay_memory" >
+        <action
+            android:id="@+id/action_memoryDelayAssessment_to_finishProcess"
+            app:destination="@id/finishProcess"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishProcess"
+        android:name="com.yyrz.SpeechCognition.ui.assessmentUI.finishProcess.FinishProcess"
+        android:label="@string/finish_assessment"
+        tools:layout="@layout/fragment_finish_process" >
+        <action
+            android:id="@+id/action_finishProcess_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/training_home_page"
+        android:name="com.yyrz.SpeechCognition.ui.trainningUI.Training_home_page"
+        android:label="fragment_training_home_page"
+        tools:layout="@layout/fragment_training_home_page" />
+
+</navigation>
