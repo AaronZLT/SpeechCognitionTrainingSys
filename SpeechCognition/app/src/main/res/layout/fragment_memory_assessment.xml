@@ -1,0 +1,276 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sc.SpeechCognition.ui.assessmentUI.memory.MemoryAssessment">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/memory_assessment_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memory_test_label1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline4"
+        app:layout_constraintStart_toStartOf="@id/guideline7" />
+
+    <TextView
+        android:id="@+id/memory_assessment_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memory_test_label2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="@+id/memory_assessment_textView1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_textView1" />
+
+    <TextView
+        android:id="@+id/memory_assessment_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memory_test_label3"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toEndOf="@+id/memory_assessment_textView2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_textView2" />
+
+    <TextView
+        android:id="@+id/memory_assessment_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memory_test_label4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="@+id/memory_assessment_textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/barrier" />
+
+    <TextView
+        android:id="@+id/memory_assessment_textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memory_test_label5"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline1"
+        app:layout_constraintEnd_toEndOf="@+id/memory_assessment_textView4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/barrier" />
+
+    <TextView
+        android:id="@+id/memory_assessment_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memory_test_label6"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guideline8"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <TextView
+        android:id="@+id/memory_assessment_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/memory_test_label7"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@id/guideline9"
+        app:layout_constraintTop_toTopOf="@+id/guideline5" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="memory_assessment_textView1,memory_assessment_textView2,memory_assessment_textView3,memory_assessment_textView4,memory_assessment_textView5"
+        tools:layout_editor_absoluteX="438dp" />
+
+    <CheckBox
+        android:id="@+id/memory_assessment_checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/memory_assessment_textView1"
+        app:layout_constraintEnd_toEndOf="@+id/memory_assessment_textView6"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_textView6"
+        app:layout_constraintTop_toTopOf="@+id/memory_assessment_textView1" />
+
+    <CheckBox
+        android:id="@+id/memory_assessment_checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/memory_assessment_textView2"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_checkBox1"
+        app:layout_constraintTop_toTopOf="@+id/memory_assessment_textView2" />
+
+    <CheckBox
+        android:id="@+id/memory_assessment_checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/memory_assessment_textView3"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_checkBox2"
+        app:layout_constraintTop_toTopOf="@+id/memory_assessment_textView3" />
+
+    <CheckBox
+        android:id="@+id/memory_assessment_checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/memory_assessment_textView4"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_checkBox3"
+        app:layout_constraintTop_toTopOf="@+id/memory_assessment_textView4" />
+
+    <CheckBox
+        android:id="@+id/memory_assessment_checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/memory_assessment_textView5"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_checkBox4"
+        app:layout_constraintTop_toTopOf="@+id/memory_assessment_textView5" />
+
+    <CheckBox
+        android:id="@+id/memory_assessment_checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/memory_assessment_checkBox1"
+        app:layout_constraintEnd_toEndOf="@+id/memory_assessment_textView7"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_textView7" />
+
+    <CheckBox
+        android:id="@+id/memory_assessment_checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/memory_assessment_checkBox2"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_checkBox6" />
+
+
+    <CheckBox
+        android:id="@+id/memory_assessment_checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/memory_assessment_checkBox3"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_checkBox7" />
+
+    <CheckBox
+        android:id="@+id/memory_assessment_checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/memory_assessment_checkBox4"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_checkBox8" />
+
+
+    <CheckBox
+        android:id="@+id/memory_assessment_checkBox10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/memory_assessment_checkBox5"
+        app:layout_constraintStart_toStartOf="@+id/memory_assessment_checkBox9" />
+
+    <ImageButton
+        android:id="@+id/memory_assessment_imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.5"
+        android:src="@drawable/next"
+        app:layout_constraintStart_toStartOf="@+id/guideline11"
+        app:layout_constraintTop_toTopOf="@+id/guideline10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.7"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.58"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.34"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.22"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.46"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.11" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.39"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_percent="0.69"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8002736" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5912409" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
