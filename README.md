@@ -9,4 +9,6 @@
 
  +Gradle
 
+ WARNING:This .gradle is out of use,plz just trash it.
+
 
